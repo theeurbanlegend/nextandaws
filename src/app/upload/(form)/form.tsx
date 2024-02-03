@@ -2,7 +2,7 @@ import { useFormState } from "react-dom"
 import { uploadFile } from "./actions"
 import Submitbutton from "./Submitbutton"
 
-const initialState:{message:string| null}={message:null}
+const initialState:{status:string|null,message:string| null}={status:null, message:null}
 export default function UploadForm(){
     const [state, formAction]=useFormState(uploadFile, initialState)
     return (
